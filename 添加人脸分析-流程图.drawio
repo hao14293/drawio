@@ -340,8 +340,8 @@
         <mxCell id="lASkek3TJaVZXBpISCOK-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lASkek3TJaVZXBpISCOK-111" target="lASkek3TJaVZXBpISCOK-114" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lASkek3TJaVZXBpISCOK-111" value="视频流需要下发算子进行分析（grpc）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="555" y="1560" width="120" height="60" as="geometry" />
+        <mxCell id="lASkek3TJaVZXBpISCOK-111" value="视频流需要下发算子进行分析（grpc）算子会异步上报任务进度" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="555" y="1560" width="185" height="60" as="geometry" />
         </mxCell>
         <mxCell id="lASkek3TJaVZXBpISCOK-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="lASkek3TJaVZXBpISCOK-114" target="lASkek3TJaVZXBpISCOK-115" edge="1">
           <mxGeometry relative="1" as="geometry" />
