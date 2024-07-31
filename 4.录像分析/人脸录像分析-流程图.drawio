@@ -418,7 +418,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="2VXlJBjByZIwGx6ayslx-136" value="算子上报离线任务进度" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="480" y="2270" width="122" height="40" as="geometry" />
+          <mxGeometry x="461" y="2270" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="2VXlJBjByZIwGx6ayslx-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2VXlJBjByZIwGx6ayslx-137" target="2VXlJBjByZIwGx6ayslx-139">
           <mxGeometry relative="1" as="geometry" />
