@@ -61,7 +61,7 @@
             <mxPoint x="351" y="278" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7uT16rikvdsjlH4VoNbg-32" value="6：更新数据表task中的状态" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="7uT16rikvdsjlH4VoNbg-6">
+        <mxCell id="7uT16rikvdsjlH4VoNbg-32" value="6：更新数据表task中的状态(JOB_WAITING, JOB_PAUSE)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="7uT16rikvdsjlH4VoNbg-6">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="55" y="360" as="sourcePoint" />
             <mxPoint x="209" y="360" as="targetPoint" />
