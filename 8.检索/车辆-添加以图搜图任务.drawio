@@ -43,7 +43,7 @@
         <mxCell id="YMs_w-YO0QDrecfEAsBb-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YMs_w-YO0QDrecfEAsBb-5" target="YMs_w-YO0QDrecfEAsBb-27">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YMs_w-YO0QDrecfEAsBb-5" value="特征转换" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="YMs_w-YO0QDrecfEAsBb-5" value="特征转换&lt;div&gt;（车辆是1、2、3）&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="116" y="430" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YMs_w-YO0QDrecfEAsBb-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YMs_w-YO0QDrecfEAsBb-6" target="YMs_w-YO0QDrecfEAsBb-7">
@@ -101,12 +101,12 @@
           <mxGeometry x="354" y="340" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YMs_w-YO0QDrecfEAsBb-21" value="如果获取到的资源为空，程序不再往下执行；有的话将算子资源以Address为key，资源信息为value保存为map，设置到context中" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="540" y="350" width="190" height="60" as="geometry" />
+          <mxGeometry x="490" y="340" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="YMs_w-YO0QDrecfEAsBb-23" value="2. url&lt;div&gt;构建特征提取请求，请求资源进行特征提取&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="YMs_w-YO0QDrecfEAsBb-23" value="&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;2. url&lt;/font&gt;&lt;/b&gt;&lt;div style=&quot;&quot;&gt;构建特征提取请求，请求资源进行特征提取&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="380" y="430" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="YMs_w-YO0QDrecfEAsBb-24" value="3. base64Image&lt;div&gt;构建特征提取请求，请求资源进行特征提取&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="YMs_w-YO0QDrecfEAsBb-24" value="&lt;b&gt;3. base64Image&lt;/b&gt;&lt;div&gt;构建特征提取请求，请求资源进行特征提取&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="480" y="430" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YMs_w-YO0QDrecfEAsBb-25" value="4. ImgID&lt;div&gt;根据imgID从云库中查询图片URL，然后走（2.url流程）&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
@@ -115,7 +115,7 @@
         <mxCell id="YMs_w-YO0QDrecfEAsBb-26" value="5. recordID&lt;div&gt;根据recordID查询特征（看之前有没有特征记录）&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="690" y="430" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="YMs_w-YO0QDrecfEAsBb-27" value="1. feature&lt;div&gt;有特征则直接获取特征&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="YMs_w-YO0QDrecfEAsBb-27" value="&lt;b&gt;1. feature&lt;/b&gt;&lt;div&gt;有特征则直接获取特征&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="280" y="430" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YMs_w-YO0QDrecfEAsBb-28" value="如果特征获取过程中出现错误信息，则将错误信息设置到context中（后续会判断）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
