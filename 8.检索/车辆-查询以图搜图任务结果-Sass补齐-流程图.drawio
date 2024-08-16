@@ -1,9 +1,48 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="第 1 页" id="p9ECX3o85oFw_eTdMMI6">
-    <mxGraphModel>
+    <mxGraphModel dx="1147" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="8aVGLorli8NCL3XHWJvo-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8aVGLorli8NCL3XHWJvo-1" target="8aVGLorli8NCL3XHWJvo-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8aVGLorli8NCL3XHWJvo-1" value="Sass下发任务" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="40" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8aVGLorli8NCL3XHWJvo-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8aVGLorli8NCL3XHWJvo-2" target="8aVGLorli8NCL3XHWJvo-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8aVGLorli8NCL3XHWJvo-2" value="Page检验并设置page（start，limit）信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8aVGLorli8NCL3XHWJvo-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8aVGLorli8NCL3XHWJvo-3" target="8aVGLorli8NCL3XHWJvo-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8aVGLorli8NCL3XHWJvo-3" value="根据key和jobId容redis中查询JobInfo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="190" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8aVGLorli8NCL3XHWJvo-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8aVGLorli8NCL3XHWJvo-4" target="8aVGLorli8NCL3XHWJvo-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8aVGLorli8NCL3XHWJvo-4" value="判断jobType和Uid参数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="270" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8aVGLorli8NCL3XHWJvo-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8aVGLorli8NCL3XHWJvo-5" target="8aVGLorli8NCL3XHWJvo-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8aVGLorli8NCL3XHWJvo-5" value="根据jobId、start、limit以及jobInfo中的排序方式从Redis中获取有序集合中指定范围的搜索记录similarityList" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="350" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="8aVGLorli8NCL3XHWJvo-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8aVGLorli8NCL3XHWJvo-6" target="8aVGLorli8NCL3XHWJvo-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8aVGLorli8NCL3XHWJvo-6" value="如果similarityList为空或totalCount=0，返回0和空列表" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="275" y="450" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8aVGLorli8NCL3XHWJvo-7" value="如果不为空，将取出来的搜索记录的相似度和recordId放到result中返回" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="275" y="540" width="170" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
