@@ -1,9 +1,41 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="第 1 页" id="aZ6Zs_0Euh4aBiiIeP4x">
-    <mxGraphModel>
+    <mxGraphModel dx="1147" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="TOjoiwxT66WCl2IpJvfX-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TOjoiwxT66WCl2IpJvfX-1" target="TOjoiwxT66WCl2IpJvfX-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TOjoiwxT66WCl2IpJvfX-1" value="Sass下发请求" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="30" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TOjoiwxT66WCl2IpJvfX-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="TOjoiwxT66WCl2IpJvfX-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TOjoiwxT66WCl2IpJvfX-2" value="Redis根据key和jobid取出Job" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="345" y="110" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TOjoiwxT66WCl2IpJvfX-3" value="job为null就不用删了" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="480" y="115" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TOjoiwxT66WCl2IpJvfX-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TOjoiwxT66WCl2IpJvfX-4" target="TOjoiwxT66WCl2IpJvfX-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TOjoiwxT66WCl2IpJvfX-4" value="校验jobType和uid" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="345" y="182" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TOjoiwxT66WCl2IpJvfX-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TOjoiwxT66WCl2IpJvfX-5" target="TOjoiwxT66WCl2IpJvfX-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TOjoiwxT66WCl2IpJvfX-5" value="根据key和jobId从Redis的Task和Result表中删除" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="345" y="250" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TOjoiwxT66WCl2IpJvfX-6" value="没有报错就返回200" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="345" y="320" width="110" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
