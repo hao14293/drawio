@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.8">
   <diagram name="第 1 页" id="7Om6o-WO4HEuYXvUx-Oh">
-    <mxGraphModel dx="1147" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1147" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -12,7 +12,7 @@
         </mxCell>
         <mxCell id="aWvWVetxjmr20OH63ybd-27" value="" style="endArrow=classic;html=1;rounded=0;" parent="aWvWVetxjmr20OH63ybd-25" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint y="70" as="sourcePoint" />
+            <mxPoint x="40" y="70" as="sourcePoint" />
             <mxPoint x="200" y="70" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
@@ -25,7 +25,15 @@
         <mxCell id="aWvWVetxjmr20OH63ybd-71" value="人像库 ID" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="aWvWVetxjmr20OH63ybd-25" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="200" y="360" as="sourcePoint" />
-            <mxPoint y="360" as="targetPoint" />
+            <mxPoint x="40" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWvWVetxjmr20OH63ybd-52" value="Saas平台" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="aWvWVetxjmr20OH63ybd-25" vertex="1">
+          <mxGeometry y="392" width="80" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="aWvWVetxjmr20OH63ybd-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="aWvWVetxjmr20OH63ybd-25" target="aWvWVetxjmr20OH63ybd-52" edge="1" source="aWvWVetxjmr20OH63ybd-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="40" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="aWvWVetxjmr20OH63ybd-29" value="" style="group" parent="1" vertex="1" connectable="0">
@@ -78,14 +86,6 @@
         </mxCell>
         <mxCell id="aWvWVetxjmr20OH63ybd-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" parent="1" source="aWvWVetxjmr20OH63ybd-40" target="aWvWVetxjmr20OH63ybd-50" edge="1">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="aWvWVetxjmr20OH63ybd-52" value="Saas平台" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
-          <mxGeometry x="20" y="462" width="80" height="36" as="geometry" />
-        </mxCell>
-        <mxCell id="aWvWVetxjmr20OH63ybd-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" parent="1" target="aWvWVetxjmr20OH63ybd-52" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="60" y="110" as="sourcePoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="aWvWVetxjmr20OH63ybd-54" value="CV-RM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="414" y="462" width="81" height="36" as="geometry" />
