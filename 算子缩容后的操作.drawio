@@ -4,6 +4,128 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Qb7nR31hmw8zf656pw0K-2" value="定时任务每60s检测有没有算子缩容、扩容操作" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="349" y="20" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-3" value="gRPC请求需要扩容和缩容的请求信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="349" y="110" width="131" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-4" value="根据请求任务类型，筛选出缩容操作的请求信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="349" y="220" width="141" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-7" value="&lt;div style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:11.3pt;&quot;&gt;&lt;pre&gt;reduceResource&lt;/pre&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="170" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-5" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="Qb7nR31hmw8zf656pw0K-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="159.5" y="200" as="sourcePoint" />
+            <mxPoint x="679.5" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-14" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1" target="Qb7nR31hmw8zf656pw0K-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="159.5" y="200" as="sourcePoint" />
+            <mxPoint x="679.5" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;缩容&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Qb7nR31hmw8zf656pw0K-14">
+          <mxGeometry x="-0.8096" y="1" relative="1" as="geometry">
+            <mxPoint x="51" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-16" value="将所有需要缩容的算子按照算子类型分类" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="349" y="320" width="141" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-18" value="1. 报警算子&lt;div&gt;2. 冷搜算子&lt;/div&gt;&lt;div&gt;3. 检索算子&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="450" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-19" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;为每种类型算子创建一个上下文&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="306.5" y="420" width="261" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-20" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-size: 11.3pt;&quot;&gt;&lt;pre style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;context&lt;/span&gt;.addReduceResourceIds&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-19">
+          <mxGeometry x="18.5" y="11" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-21" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-size: 11.3pt;&quot;&gt;&lt;pre style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;context&lt;/span&gt;.addChangeTaskIds&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-19">
+          <mxGeometry x="33.5" y="32" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-22" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-size: 11.3pt; line-height: 30%;&quot;&gt;&lt;pre style=&quot;font-size: 12px; line-height: 30%;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Times New Roman&quot;&gt;请求同类型的所有算子&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;font-size: 12px; line-height: 30%;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Times New Roman&quot;&gt;running、loading、pending&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-19">
+          <mxGeometry x="27.5" y="63" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-23" value="&lt;font face=&quot;Times New Roman&quot;&gt;将不需要缩容的算子添加到&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;n7LfwcWM67cJGT_cUcLi&quot;&gt;context.resourceInfoHolder中&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-19">
+          <mxGeometry x="12.5" y="113" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-24" value="获取与算子绑定的库信息，需要缩容的&lt;div&gt;算子&lt;span style=&quot;background-color: initial;&quot;&gt;和同类型其他算子都需要&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-19">
+          <mxGeometry x="-4" y="160" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-26" value="从PF请求获取库对应的特征个数（抓拍库不统计）&lt;div&gt;为了转移库资源用&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-19">
+          <mxGeometry x="-4" y="200" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-27" value="计算同类型算子剩余的能力集，更新到holders中" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-19">
+          <mxGeometry x="-9.5" y="248" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-25" value="冷搜和检索算子需要获取对应的特征数量" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="585" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-28" value="计算算子的容量，转移绑定的库" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="730" width="559.5" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-30" value="统计缩容算子上的注册库数量和抓拍库" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-28">
+          <mxGeometry x="150" y="30" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-31" value="再统计其它算子上的注册库数量，并根据资源ID分类" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-28">
+          <mxGeometry x="113" y="60" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-32" value="如果没有同类型的其它算子，将缩容算子上的库信息添加到&lt;div style=&quot;line-height: 0%;&quot;&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255); font-size: 11.3pt; line-height: 0%;&quot;&gt;&lt;pre style=&quot;font-size: 13px; line-height: 0%;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;getUnProcessRepositoryInfos()中，返回&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-28">
+          <mxGeometry x="95" y="90" width="340" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-33" value="先分配注册库，每次选取剩余能力集最大的算子，更新该算子的剩余能力集，&lt;div&gt;重新放入&lt;span style=&quot;font-family: n7LfwcWM67cJGT_cUcLi; background-color: initial;&quot;&gt;context.resourceInfoHolder中。如果能力集最大的算子也处理不了，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: n7LfwcWM67cJGT_cUcLi; background-color: initial;&quot;&gt;将该注册库添加到&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; font-size: 13px; background-color: initial;&quot;&gt;getUnProcessRepositoryInfos()中&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-28">
+          <mxGeometry x="59.75" y="130" width="440" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-34" value="将该算子加入到context.getPushResourceRepositoryInfos()中" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-28">
+          <mxGeometry x="104.75" y="190" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-35" value="然后分配抓拍库" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-28">
+          <mxGeometry x="208" y="220" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-36" value="用同类型算子抓拍库的总数量除以其它算子的数量，&lt;div&gt;得到每个算子需要分配的抓拍库数量&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-28">
+          <mxGeometry x="129.75" y="250" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-37" value="遍历其他算子上已有的抓拍库数量，如果超过平均数量，将超出部分移除，并将移除的部分加入到待分配&lt;div&gt;context.getUninstallResourceRepositoryInfos()中&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-28">
+          <mxGeometry x="-10.25" y="295" width="580" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-38" value="再次遍历算子，如果算子的抓拍库数量少于平均数量，则从需要缩容的算子的抓拍库中取出几个添加到当前算子上&lt;div&gt;并将对应的信息加入到&lt;span style=&quot;background-color: initial;&quot;&gt;将该算子加入到context.getPushResourceRepositoryInfos()中&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-28">
+          <mxGeometry x="-30.25" y="335" width="620" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-29" value="&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;context.calculate有2种实现，&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;对应冷搜、检索&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="590" y="680" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-40" value="处理缩容后相关操作" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="199.75" y="1169" width="500" height="251" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-42" value="如果有没有算子能处理的注册库（&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; font-size: 13px;&quot;&gt;getUnProcessRepositoryInfos()&lt;/span&gt;）插入到数据库" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-40">
+          <mxGeometry y="59" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-43" value="处理内存库资源绑定关系（Map），先删后加" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-40">
+          <mxGeometry x="63" y="89" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-44" value="卸载库资源和推库&lt;div&gt;先处理&lt;span style=&quot;background-color: initial;&quot;&gt;context.getUninstallResourceRepositoryInfos()中的库信息，grpc请求对应的算子卸载库资源&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-40">
+          <mxGeometry x="-30" y="114" width="550" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-41" value="数据库，先删除，再添加&lt;div&gt;删除之前的库与库资源绑定信息，再添加新的库与库资源绑定信息&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="205" y="1193" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-45" value="算子处于pending就不处理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1330" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-46" value="将&lt;span style=&quot;font-family: n7LfwcWM67cJGT_cUcLi;&quot;&gt;context.resourceInfoHolder的算子，推库&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="1318" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-47" value="通知EX" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1348" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-48" value="gRPC删除缩容请求任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="335" y="1378" width="150" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
