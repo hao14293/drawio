@@ -4,11 +4,17 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Qb7nR31hmw8zf656pw0K-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qb7nR31hmw8zf656pw0K-2" target="Qb7nR31hmw8zf656pw0K-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Qb7nR31hmw8zf656pw0K-2" value="定时任务每60s检测有没有算子缩容、扩容操作" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="349" y="20" width="130" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Qb7nR31hmw8zf656pw0K-3" value="gRPC请求需要扩容和缩容的请求信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="349" y="110" width="131" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qb7nR31hmw8zf656pw0K-4" target="Qb7nR31hmw8zf656pw0K-16">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Qb7nR31hmw8zf656pw0K-4" value="根据请求任务类型，筛选出缩容操作的请求信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="349" y="220" width="141" height="60" as="geometry" />
@@ -33,6 +39,9 @@
             <mxPoint x="51" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Qb7nR31hmw8zf656pw0K-16" target="Qb7nR31hmw8zf656pw0K-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Qb7nR31hmw8zf656pw0K-16" value="将所有需要缩容的算子按照算子类型分类" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="349" y="320" width="141" height="60" as="geometry" />
         </mxCell>
@@ -40,7 +49,7 @@
           <mxGeometry x="610" y="450" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Qb7nR31hmw8zf656pw0K-19" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;为每种类型算子创建一个上下文&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="306.5" y="420" width="261" height="280" as="geometry" />
+          <mxGeometry x="289" y="420" width="261" height="280" as="geometry" />
         </mxCell>
         <mxCell id="Qb7nR31hmw8zf656pw0K-20" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-size: 11.3pt;&quot;&gt;&lt;pre style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;context&lt;/span&gt;.addReduceResourceIds&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Qb7nR31hmw8zf656pw0K-19">
           <mxGeometry x="18.5" y="11" width="190" height="60" as="geometry" />
@@ -65,6 +74,9 @@
         </mxCell>
         <mxCell id="Qb7nR31hmw8zf656pw0K-25" value="冷搜和检索算子需要获取对应的特征数量" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="570" y="585" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qb7nR31hmw8zf656pw0K-28" target="Qb7nR31hmw8zf656pw0K-40">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Qb7nR31hmw8zf656pw0K-28" value="计算算子的容量，转移绑定的库" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="170" y="730" width="559.5" height="390" as="geometry" />
@@ -125,6 +137,12 @@
         </mxCell>
         <mxCell id="Qb7nR31hmw8zf656pw0K-48" value="gRPC删除缩容请求任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="362" y="1378" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.461;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Qb7nR31hmw8zf656pw0K-3" target="Qb7nR31hmw8zf656pw0K-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qb7nR31hmw8zf656pw0K-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.45;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Qb7nR31hmw8zf656pw0K-19" target="Qb7nR31hmw8zf656pw0K-28">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
