@@ -1,9 +1,113 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.10">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.12">
   <diagram name="第 1 页" id="dIqXwlfSH4mTH4c8Dbd8">
-    <mxGraphModel>
+    <mxGraphModel dx="1147" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sThhLUsS4oZPJeeoQ9ku-1" target="sThhLUsS4oZPJeeoQ9ku-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-9" value="1. 验证是否可以缩扩容" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sThhLUsS4oZPJeeoQ9ku-8">
+          <mxGeometry x="-0.125" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.21;exitY=1;exitDx=0;exitDy=0;entryX=0.21;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="sThhLUsS4oZPJeeoQ9ku-1" target="sThhLUsS4oZPJeeoQ9ku-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-14" value="3. 缩扩容请求" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sThhLUsS4oZPJeeoQ9ku-13">
+          <mxGeometry x="-0.05" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-1" value="Web" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="50" width="420" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sThhLUsS4oZPJeeoQ9ku-2" target="sThhLUsS4oZPJeeoQ9ku-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-12" value="2. 验证缩容后对业务的影响" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sThhLUsS4oZPJeeoQ9ku-10">
+          <mxGeometry x="-0.1143" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.212;exitY=1.025;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="sThhLUsS4oZPJeeoQ9ku-2" target="sThhLUsS4oZPJeeoQ9ku-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-16" value="4. 缩扩容" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sThhLUsS4oZPJeeoQ9ku-15">
+          <mxGeometry x="-0.1594" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-2" value="mPlatForm" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="170" width="420" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="sThhLUsS4oZPJeeoQ9ku-3" target="sThhLUsS4oZPJeeoQ9ku-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-21" value="5. 写入&lt;div&gt;缩扩容记录&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sThhLUsS4oZPJeeoQ9ku-20">
+          <mxGeometry x="-0.0857" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sThhLUsS4oZPJeeoQ9ku-3" target="sThhLUsS4oZPJeeoQ9ku-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-24" value="6. 缩扩容算子" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sThhLUsS4oZPJeeoQ9ku-23">
+          <mxGeometry x="-0.1714" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-3" value="resourceManager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="280" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sThhLUsS4oZPJeeoQ9ku-4" target="sThhLUsS4oZPJeeoQ9ku-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-25" value="更新库资源&lt;div&gt;绑定关系&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sThhLUsS4oZPJeeoQ9ku-22">
+          <mxGeometry x="-0.1667" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sThhLUsS4oZPJeeoQ9ku-4" target="sThhLUsS4oZPJeeoQ9ku-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-27" value="查询特征个数" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sThhLUsS4oZPJeeoQ9ku-26">
+          <mxGeometry x="0.0364" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sThhLUsS4oZPJeeoQ9ku-4" target="sThhLUsS4oZPJeeoQ9ku-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-29" value="同步路由" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sThhLUsS4oZPJeeoQ9ku-28">
+          <mxGeometry x="0.0172" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-4" value="taskManager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="280" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-5" value="PF" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="400" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-6" value="EX" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="400" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-7" value="算子" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="400" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sThhLUsS4oZPJeeoQ9ku-19" value="MySQL" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="285" width="50" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
