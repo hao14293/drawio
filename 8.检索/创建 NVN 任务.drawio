@@ -73,6 +73,36 @@
         <mxCell id="G-5BI7pJ8SagUFH3ydPl-27" value="将 TaskQueueInfo 加入到 NVNTask 线程池队列中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="375" y="1640" width="155" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-28" value="任务队列中取出任务" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="1754" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-29" value="task 数据表中查询，确认该任务存在，不存在则不处理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="1870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-30" value="AnalysisEnable 为 OPEN" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="1980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-31" value="任务状态为RUNNING 或 WAITTING，则不处理，删除、完成、异常、暂停，将任务关闭" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-32" value="如果对应的算子不存在或者离线，将数据表中的 NVNtask 删除" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="2090" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-33" value="算子在线，查询算子信息，没有可用资源，将任务从数据表中删除；如果有可用资源，但资源状态不为 RUNNING 或 loading，从数据表中删除；如果算子在线且状态为正常，发送关闭任务请求；如果关闭成功，删除数据表记录，如果删除失败，更新任务进度，重新放回队列中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="467.5" y="2160" width="145" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-34" value="任务状态不是 WAITTING，不处理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="2090" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-35" value="申请资源，开启分析" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="2170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-36" value="如果出现异常，记录异常信息，更新数据表中人物信息，设置为 waiting，重新放入队列" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="2250" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-37" value="没有出现异常，且任务的资源信息存在，表示开启成功，更新数据表的任务信息，将状态设为 RUNNING" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="2330" width="150" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
