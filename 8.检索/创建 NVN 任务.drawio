@@ -1,9 +1,78 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15" version="24.7.10">
   <diagram name="第 1 页" id="pQsE1rfgG5siOTRyVbLD">
-    <mxGraphModel>
+    <mxGraphModel dx="954" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-1" value="Sass 下发任务" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="20" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-3" value="设置 UID" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="110" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-4" value="参数校验" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="180" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-5" value="topN in [1, 10]&lt;div&gt;threshold in (0, 1]&lt;/div&gt;&lt;div&gt;NVNTaskType is ONE_TIME or SUSTAIN&lt;/div&gt;&lt;div&gt;srcInfo and dstInfo can not be null&lt;/div&gt;&lt;div&gt;channels and repositoryIds can only use one type&lt;/div&gt;&lt;div&gt;channels size &amp;lt;= 64&lt;/div&gt;&lt;div&gt;channels 不能重复&lt;/div&gt;&lt;div&gt;设置开始时间结束时间，如果不携带，开始设为 0，结束设为当前&lt;/div&gt;&lt;div&gt;检验 结束时间不能早于开始时间&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="270" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-6" value="设置 NvnTimeSplit&lt;div&gt;开始时间为 0，结束时间为当前&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-7" value="校验库和通道" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-8" value="获取 srcRepositortIds,srcChannels&lt;div&gt;dstRepositoryIds, dstChannels&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;srcRepositoryIds 和 dstRepositoryIds的长度不能超过 1&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ReposotoryIds 和 Channels 只能有且只有一个不为空&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果srcRepositortIds不为空，从数据表根据ReposotoryIds查询 srcExitRepository 数量，并与参数中的数量比较是否一致&lt;/div&gt;&lt;div&gt;dstRepositoryIds也是同样操作&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果 srcChannels不为空，数据表channelAnalysis查询 RepositoryId,判断是否为空，不为空则根据库 ID 从数据表查询库信息设置到NVNRepoInfo 参数中，并比较库数量与 srcChannels 数量是否一致&lt;/div&gt;&lt;div&gt;、dstChannels 同样操作&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;将根据 ChannelId 和 库 ID 查询出来的库信息汇总添加到nvnRepoInfo.getSrcExitRepositorys&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;dst 同样操作&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;返回 NvnRepoInfo&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="360" width="280" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-10" value="查询 NVN 任务是否存在" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="505" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-11" value="存在多个 NVNJobs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-12" value="根据 JobId 查询 task" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-13" value="获取 tasks 的状态" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-14" value="ABNORMAL&lt;div&gt;RUNNING&lt;/div&gt;&lt;div&gt;INTERRUPTED&lt;/div&gt;&lt;div&gt;PAUSE&lt;/div&gt;&lt;div&gt;WAITING&lt;/div&gt;&lt;div&gt;WAIT_TO_START&lt;/div&gt;&lt;div&gt;FINISHED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;按照顺序进行判断，只要包含一个则为这个状态&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="780" width="140" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-15" value="如果状态不为空，且状态为 WAITTING 或 RUNNING，则为同一个 NVN 任务" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-16" value="任务已存在，抛出异常" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="970" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-17" value="获取分片信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="1070" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-18" value="遍历Repositorys&lt;div&gt;如果是静态库，根据库 ID 从数据表查询分片信息，根据库信息和分片信息组建 NVNTaskRepository，并根据库类型设置开始时间和结束时间，如果是抓拍库，则根据 Request 参数中的时间设置，否则根据 NVNTimeSplit 的时间设置&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;src 和 DST 都是相同操作&lt;/div&gt;&lt;div&gt;将组建好的 NVNTaskRepository 添加到各自的 TaskInfo 中&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果没有获取到静态库分片信息，则抛出异常&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="76" y="1025" width="200" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-20" value="jobId==NULL" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1169" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-21" value="判断 NVN 能力集" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1300" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-22" value="根据任务type，查询任务处于 WAITTING 和 RUNNING 的数量&lt;div&gt;ONE_TIME 不能超过 NVN 任务的最大值（配置文件制定）&lt;/div&gt;&lt;div&gt;SUSTAIN 不能超过 4 个&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="1290" width="205" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-24" value="将 NVNJob 插入数据表，并设置 JobID" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="1370" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-25" value="根据 Request 参数和 NVNRepoInfo 组建 NVNTaskParam，并保存到数据表task 中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1490" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-26" value="根据 task 信息组建 TaskQueueInfo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="1560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-27" value="将 TaskQueueInfo 加入到 NVNTask 线程池队列中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="1640" width="155" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
