@@ -1,107 +1,240 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15" version="24.7.10">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.10">
   <diagram name="第 1 页" id="pQsE1rfgG5siOTRyVbLD">
-    <mxGraphModel dx="954" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1147" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-1" value="Sass 下发任务" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="L79QZmaPCb8GzI981OfW-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-1" target="G-5BI7pJ8SagUFH3ydPl-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-1" value="Sass 下发任务" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="20" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-3" value="设置 UID" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="L79QZmaPCb8GzI981OfW-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-3" target="G-5BI7pJ8SagUFH3ydPl-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-3" value="设置 UID" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="365" y="110" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-4" value="参数校验" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="180" width="80" height="80" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-4" target="G-5BI7pJ8SagUFH3ydPl-6">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-5" value="topN in [1, 10]&lt;div&gt;threshold in (0, 1]&lt;/div&gt;&lt;div&gt;NVNTaskType is ONE_TIME or SUSTAIN&lt;/div&gt;&lt;div&gt;srcInfo and dstInfo can not be null&lt;/div&gt;&lt;div&gt;channels and repositoryIds can only use one type&lt;/div&gt;&lt;div&gt;channels size &amp;lt;= 64&lt;/div&gt;&lt;div&gt;channels 不能重复&lt;/div&gt;&lt;div&gt;设置开始时间结束时间，如果不携带，开始设为 0，结束设为当前&lt;/div&gt;&lt;div&gt;检验 结束时间不能早于开始时间&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="160" width="270" height="170" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-4" value="参数校验" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="170" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-6" value="设置 NvnTimeSplit&lt;div&gt;开始时间为 0，结束时间为当前&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="300" width="120" height="60" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-5" value="topN in [1, 10]&lt;div&gt;threshold in (0, 1]&lt;/div&gt;&lt;div&gt;NVNTaskType is ONE_TIME or SUSTAIN&lt;/div&gt;&lt;div&gt;srcInfo and dstInfo can not be null&lt;/div&gt;&lt;div&gt;channels and repositoryIds can only use one type&lt;/div&gt;&lt;div&gt;channels size &amp;lt;= 64&lt;/div&gt;&lt;div&gt;channels 不能重复&lt;/div&gt;&lt;div&gt;设置开始时间结束时间，如果不携带，开始设为 0，结束设为当前&lt;/div&gt;&lt;div&gt;检验 结束时间不能早于开始时间&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="41" y="125" width="270" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-7" value="校验库和通道" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="400" width="120" height="60" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-6" target="G-5BI7pJ8SagUFH3ydPl-7">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-8" value="获取 srcRepositortIds,srcChannels&lt;div&gt;dstRepositoryIds, dstChannels&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;srcRepositoryIds 和 dstRepositoryIds的长度不能超过 1&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ReposotoryIds 和 Channels 只能有且只有一个不为空&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果srcRepositortIds不为空，从数据表根据ReposotoryIds查询 srcExitRepository 数量，并与参数中的数量比较是否一致&lt;/div&gt;&lt;div&gt;dstRepositoryIds也是同样操作&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果 srcChannels不为空，数据表channelAnalysis查询 RepositoryId,判断是否为空，不为空则根据库 ID 从数据表查询库信息设置到NVNRepoInfo 参数中，并比较库数量与 srcChannels 数量是否一致&lt;/div&gt;&lt;div&gt;、dstChannels 同样操作&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;将根据 ChannelId 和 库 ID 查询出来的库信息汇总添加到nvnRepoInfo.getSrcExitRepositorys&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;dst 同样操作&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;返回 NvnRepoInfo&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="30" y="360" width="280" height="380" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-6" value="设置 NvnTimeSplit&lt;div&gt;开始时间为 0，结束时间为当前&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="280" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-10" value="查询 NVN 任务是否存在" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="505" width="80" height="80" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-7" target="G-5BI7pJ8SagUFH3ydPl-10">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-11" value="存在多个 NVNJobs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="365" y="610" width="120" height="60" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-7" value="校验库和通道" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-12" value="根据 JobId 查询 task" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="365" y="710" width="120" height="60" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-8" value="获取 srcRepositortIds,srcChannels&lt;div&gt;dstRepositoryIds, dstChannels&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;srcRepositoryIds 和 dstRepositoryIds的长度不能超过 1&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ReposotoryIds 和 Channels 只能有且只有一个不为空&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果srcRepositortIds不为空，从数据表根据ReposotoryIds查询 srcExitRepository 数量，并与参数中的数量比较是否一致&lt;/div&gt;&lt;div&gt;dstRepositoryIds也是同样操作&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果 srcChannels不为空，数据表channelAnalysis查询 RepositoryId,判断是否为空，不为空则根据库 ID 从数据表查询库信息设置到NVNRepoInfo 参数中，并比较库数量与 srcChannels 数量是否一致&lt;/div&gt;&lt;div&gt;、dstChannels 同样操作&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;将根据 ChannelId 和 库 ID 查询出来的库信息汇总添加到nvnRepoInfo.getSrcExitRepositorys&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;dst 同样操作&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;返回 NvnRepoInfo&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="36" y="310" width="280" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-13" value="获取 tasks 的状态" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="800" width="120" height="60" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-10" target="G-5BI7pJ8SagUFH3ydPl-17">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-14" value="ABNORMAL&lt;div&gt;RUNNING&lt;/div&gt;&lt;div&gt;INTERRUPTED&lt;/div&gt;&lt;div&gt;PAUSE&lt;/div&gt;&lt;div&gt;WAITING&lt;/div&gt;&lt;div&gt;WAIT_TO_START&lt;/div&gt;&lt;div&gt;FINISHED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;按照顺序进行判断，只要包含一个则为这个状态&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="110" y="780" width="140" height="200" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-10" value="查询 NVN 任务是否存在" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="460" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-15" value="如果状态不为空，且状态为 WAITTING 或 RUNNING，则为同一个 NVN 任务" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="890" width="120" height="60" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-11" target="G-5BI7pJ8SagUFH3ydPl-12">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-16" value="任务已存在，抛出异常" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="355" y="970" width="135" height="60" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-11" value="存在多个 NVNJobs" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="365" y="570" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-17" value="获取分片信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="365" y="1070" width="120" height="60" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-12" target="G-5BI7pJ8SagUFH3ydPl-13">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-18" value="遍历Repositorys&lt;div&gt;如果是静态库，根据库 ID 从数据表查询分片信息，根据库信息和分片信息组建 NVNTaskRepository，并根据库类型设置开始时间和结束时间，如果是抓拍库，则根据 Request 参数中的时间设置，否则根据 NVNTimeSplit 的时间设置&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;src 和 DST 都是相同操作&lt;/div&gt;&lt;div&gt;将组建好的 NVNTaskRepository 添加到各自的 TaskInfo 中&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果没有获取到静态库分片信息，则抛出异常&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="76" y="1025" width="200" height="225" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-12" value="根据 JobId 查询 task" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="365" y="670" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-20" value="jobId==NULL" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="1169" width="80" height="80" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-13" target="G-5BI7pJ8SagUFH3ydPl-15">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-21" value="判断 NVN 能力集" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="1300" width="120" height="40" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-13" value="获取 tasks 的状态" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="365" y="760" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-22" value="根据任务type，查询任务处于 WAITTING 和 RUNNING 的数量&lt;div&gt;ONE_TIME 不能超过 NVN 任务的最大值（配置文件制定）&lt;/div&gt;&lt;div&gt;SUSTAIN 不能超过 4 个&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="85" y="1290" width="205" height="90" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-14" value="ABNORMAL&lt;div&gt;RUNNING&lt;/div&gt;&lt;div&gt;INTERRUPTED&lt;/div&gt;&lt;div&gt;PAUSE&lt;/div&gt;&lt;div&gt;WAITING&lt;/div&gt;&lt;div&gt;WAIT_TO_START&lt;/div&gt;&lt;div&gt;FINISHED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;按照顺序进行判断，只要包含一个则为这个状态&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="720" width="140" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-24" value="将 NVNJob 插入数据表，并设置 JobID" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="365" y="1370" width="140" height="60" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-15" target="G-5BI7pJ8SagUFH3ydPl-16">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-25" value="根据 Request 参数和 NVNRepoInfo 组建 NVNTaskParam，并保存到数据表task 中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="1490" width="210" height="60" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-15" target="G-5BI7pJ8SagUFH3ydPl-17">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-26" value="根据 task 信息组建 TaskQueueInfo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="375" y="1560" width="120" height="60" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-15" value="如果状态不为空，且状态为 WAITTING 或 RUNNING，则为同一个 NVN 任务" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="365" y="850" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-27" value="将 TaskQueueInfo 加入到 NVNTask 线程池队列中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="375" y="1640" width="155" height="60" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-16" value="任务已存在，抛出异常" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="357.5" y="940" width="135" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-28" value="任务队列中取出任务" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="235" y="1754" width="120" height="60" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-17" target="G-5BI7pJ8SagUFH3ydPl-21">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-29" value="task 数据表中查询，确认该任务存在，不存在则不处理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="235" y="1870" width="120" height="60" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-17" value="获取分片信息" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="1040" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-30" value="AnalysisEnable 为 OPEN" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="255" y="1980" width="120" height="60" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-18" value="遍历Repositorys&lt;div&gt;如果是静态库，根据库 ID 从数据表查询分片信息，根据库信息和分片信息组建 NVNTaskRepository，并根据库类型设置开始时间和结束时间，如果是抓拍库，则根据 Request 参数中的时间设置，否则根据 NVNTimeSplit 的时间设置&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;src 和 DST 都是相同操作&lt;/div&gt;&lt;div&gt;将组建好的 NVNTaskRepository 添加到各自的 TaskInfo 中&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果没有获取到静态库分片信息，则抛出异常&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="980" width="200" height="225" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-31" value="任务状态为RUNNING 或 WAITTING，则不处理，删除、完成、异常、暂停，将任务关闭" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="1990" width="120" height="60" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-20" target="G-5BI7pJ8SagUFH3ydPl-24">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-32" value="如果对应的算子不存在或者离线，将数据表中的 NVNtask 删除" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="490" y="2090" width="120" height="60" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-23" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="L79QZmaPCb8GzI981OfW-21">
+          <mxGeometry x="-0.45" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-33" value="算子在线，查询算子信息，没有可用资源，将任务从数据表中删除；如果有可用资源，但资源状态不为 RUNNING 或 loading，从数据表中删除；如果算子在线且状态为正常，发送关闭任务请求；如果关闭成功，删除数据表记录，如果删除失败，更新任务进度，重新放回队列中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="467.5" y="2160" width="145" height="170" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-20" target="G-5BI7pJ8SagUFH3ydPl-25">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-34" value="任务状态不是 WAITTING，不处理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="2090" width="120" height="60" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-20" value="jobId==NULL" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="1280" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-35" value="申请资源，开启分析" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="2170" width="120" height="60" as="geometry" />
+        <mxCell id="L79QZmaPCb8GzI981OfW-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-21" target="G-5BI7pJ8SagUFH3ydPl-20">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-36" value="如果出现异常，记录异常信息，更新数据表中人物信息，设置为 waiting，重新放入队列" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="210" y="2250" width="160" height="60" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-21" value="判断 NVN 能力集" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="1210" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="G-5BI7pJ8SagUFH3ydPl-37" value="没有出现异常，且任务的资源信息存在，表示开启成功，更新数据表的任务信息，将状态设为 RUNNING" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="215" y="2330" width="150" height="60" as="geometry" />
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-22" value="根据任务type，查询任务处于 WAITTING 和 RUNNING 的数量&lt;div&gt;ONE_TIME 不能超过 NVN 任务的最大值（配置文件制定）&lt;/div&gt;&lt;div&gt;SUSTAIN 不能超过 4 个&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;判断有多少已提交且未完成的任务&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="97.5" y="1230" width="205" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-24" target="G-5BI7pJ8SagUFH3ydPl-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-24" value="将 NVNJob 插入数据表，并设置 JobID" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="1400" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-25" target="G-5BI7pJ8SagUFH3ydPl-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-25" value="根据 Request 参数和 NVNRepoInfo 组建 NVNTaskParam，并保存到数据表task 中" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="467.5" y="1520" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-26" target="G-5BI7pJ8SagUFH3ydPl-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-26" value="根据 task 信息组建 TaskQueueInfo" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="512.5" y="1620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-27" value="将 TaskQueueInfo 加入到 NVNTask 线程池队列中" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="495" y="1730" width="155" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-28" target="G-5BI7pJ8SagUFH3ydPl-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-28" value="任务队列中取出任务" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="1810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-29" target="G-5BI7pJ8SagUFH3ydPl-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-29" value="task 数据表中查询，确认该任务存在，不存在则不处理" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="1910" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-30" target="G-5BI7pJ8SagUFH3ydPl-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-30" target="G-5BI7pJ8SagUFH3ydPl-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-37" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="L79QZmaPCb8GzI981OfW-36">
+          <mxGeometry x="0.0207" y="1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-30" value="AnalysisEnable 为 OPEN" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320.5" y="2010" width="139" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-31" target="G-5BI7pJ8SagUFH3ydPl-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-31" value="任务状态为RUNNING 或 WAITTING，则不处理，删除、完成、异常、暂停，将任务关闭" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="2010" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-32" target="G-5BI7pJ8SagUFH3ydPl-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-32" value="如果对应的算子不存在或者离线，将数据表中的 NVNtask 删除" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="2120" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-33" value="算子在线，查询算子信息，没有可用资源，将任务从数据表中删除；如果有可用资源，但资源状态不为 RUNNING 或 loading，从数据表中删除；如果算子在线且状态为正常，发送关闭任务请求；如果关闭成功，删除数据表记录，如果删除失败，更新任务进度，重新放回队列中" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="2260" width="230" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-34" target="G-5BI7pJ8SagUFH3ydPl-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-34" value="任务状态不是 WAITTING，不处理" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="2100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-35" target="G-5BI7pJ8SagUFH3ydPl-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-35" value="申请资源，开启分析" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="2190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-36" target="G-5BI7pJ8SagUFH3ydPl-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-36" value="如果出现异常，记录异常信息，更新数据表中人物信息，设置为 waiting，重新放入队列" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="305" y="2290" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G-5BI7pJ8SagUFH3ydPl-37" value="没有出现异常，且任务的资源信息存在，表示开启成功，更新数据表的任务信息，将状态设为 RUNNING" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="308" y="2390" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-6" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-5" target="G-5BI7pJ8SagUFH3ydPl-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="400" as="sourcePoint" />
+            <mxPoint x="440" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-8" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="450" as="sourcePoint" />
+            <mxPoint x="360" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.45;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-10" target="G-5BI7pJ8SagUFH3ydPl-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-12" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1.014;exitY=0.3;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="830" as="sourcePoint" />
+            <mxPoint x="360" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-17" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.4;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="1120" as="sourcePoint" />
+            <mxPoint x="460" y="1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-19" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G-5BI7pJ8SagUFH3ydPl-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="1280" as="sourcePoint" />
+            <mxPoint x="460" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-28" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="1800" as="sourcePoint" />
+            <mxPoint x="820" y="1800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L79QZmaPCb8GzI981OfW-29" value="监听线程" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1770" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
