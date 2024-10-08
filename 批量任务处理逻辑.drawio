@@ -4,6 +4,9 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--81" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;看代码&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="3250" width="760" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="lX0ENtyYD9PtGXseFzCh-1" value="中台下发任务" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="330" y="20" width="136" height="40" as="geometry" />
         </mxCell>
@@ -11,7 +14,7 @@
           <mxGeometry x="510" y="25" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="lX0ENtyYD9PtGXseFzCh-4" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;request参数校验&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="278" y="110" width="232" height="150" as="geometry" />
+          <mxGeometry x="275" y="91" width="232" height="150" as="geometry" />
         </mxCell>
         <mxCell id="lX0ENtyYD9PtGXseFzCh-5" value="batchTaskId和OperateInfo不能为空" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="lX0ENtyYD9PtGXseFzCh-4" vertex="1">
           <mxGeometry x="11" y="30" width="210" height="30" as="geometry" />
@@ -25,8 +28,11 @@
         <mxCell id="lX0ENtyYD9PtGXseFzCh-8" value="OperatorNumber 和 PowerId要大于0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="lX0ENtyYD9PtGXseFzCh-4" vertex="1">
           <mxGeometry x="6" y="118" width="220" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lX0ENtyYD9PtGXseFzCh-9" target="ao0DlyovbIY_hwYU7Fb--10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="lX0ENtyYD9PtGXseFzCh-9" value="组建参数" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="271.25" y="320" width="245.5" height="140" as="geometry" />
+          <mxGeometry x="275.25" y="380" width="245.5" height="140" as="geometry" />
         </mxCell>
         <mxCell id="lX0ENtyYD9PtGXseFzCh-11" value="TaskQueue，类型为BATCH_TASK，&lt;div&gt;状态为TODO&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="lX0ENtyYD9PtGXseFzCh-9" vertex="1">
           <mxGeometry x="24" y="53" width="220" height="40" as="geometry" />
@@ -38,25 +44,295 @@
           <mxGeometry x="-4.5" y="90" width="250" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lX0ENtyYD9PtGXseFzCh-14" value="向中台回复SUCCESS" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="70" y="360" width="140" height="37" as="geometry" />
+          <mxGeometry x="180" y="571.5" width="140" height="37" as="geometry" />
         </mxCell>
         <mxCell id="lX0ENtyYD9PtGXseFzCh-15" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Helvetica&quot;&gt;TaskQueueHandleServiceImpl&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="258.5" y="500" width="330" height="500" as="geometry" />
+          <mxGeometry x="10" y="710" width="850" height="1930" as="geometry" />
         </mxCell>
         <mxCell id="lX0ENtyYD9PtGXseFzCh-16" value="从TASK_QUEUE数据表中取出状态为TODO，&lt;div&gt;ID升序排列最靠前的任务&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="lX0ENtyYD9PtGXseFzCh-15" vertex="1">
-          <mxGeometry x="9" y="35" width="270" height="40" as="geometry" />
+          <mxGeometry x="250" y="40" width="270" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lX0ENtyYD9PtGXseFzCh-18" value="&lt;span style=&quot;font-weight: 400; text-wrap: nowrap;&quot;&gt;Task不为空，则进行处理&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" parent="lX0ENtyYD9PtGXseFzCh-15" vertex="1">
-          <mxGeometry x="9" y="85" width="321" height="385" as="geometry" />
+          <mxGeometry x="10" y="80" width="840" height="1850" as="geometry" />
         </mxCell>
         <mxCell id="lX0ENtyYD9PtGXseFzCh-19" value="取出TaskType和参数" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="lX0ENtyYD9PtGXseFzCh-18" vertex="1">
-          <mxGeometry x="95.5" y="25" width="130" height="30" as="geometry" />
+          <mxGeometry x="300" y="25" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="lX0ENtyYD9PtGXseFzCh-20" value="根据参数类型做对应的处理，这里只看Batch_TASK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="lX0ENtyYD9PtGXseFzCh-18" vertex="1">
-          <mxGeometry x="10.5" y="55" width="300" height="30" as="geometry" />
+        <mxCell id="lX0ENtyYD9PtGXseFzCh-20" value="根据参数类型做对应的处理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="lX0ENtyYD9PtGXseFzCh-18" vertex="1">
+          <mxGeometry x="280" y="55" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="lX0ENtyYD9PtGXseFzCh-21" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="375" y="668" width="50" height="30" as="geometry" />
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--19" value="TaskType有5种&lt;div&gt;1. BATCH_TASK&lt;/div&gt;&lt;div&gt;2. BATCH_REDUCE&lt;/div&gt;&lt;div&gt;3. TIDE_STOP_NEW&lt;/div&gt;&lt;div&gt;4. TIDE_DELETE_START&lt;/div&gt;&lt;div&gt;5. AGENT_REGION&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="40" y="25" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--21" value="prepareBatchTask" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="520" y="55" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--22" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); line-height: 100%; font-size: 13px;&quot;&gt;&lt;p style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;prepareBatchTask方法&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;处理中台下发的批量任务，&lt;/font&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;循环处理任务&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;根据下发的任务个数与内存中已经存在的任务个数比较&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;已经存在的任务 判断是否需要更新,&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Times New Roman&quot;&gt;不更新放到noChangeTasks，&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;更新放到&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;updateTasksInfoMap&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;多出的任务组参数，新建任务，放到addTasksParamList&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="240" y="90" width="365" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--23" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;新添加得任务都放到addTasksParamList种，需要将中台下发的参数转换为agent启动算子的Json文件，TaskStatus设置为RUNNING&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="74" y="280" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--24" value="为新添加的任务创建算子编号，在内存中生成taskInfo对象，生成的算子ID作为taskId，如果目标状态为RUNNING，&lt;div&gt;则将当前状态设置为PADDING，否则设置为与目标状态一致&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="59" y="320" width="630" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--25" value="如果以上处理过程发生错误，将生成的算子编号删除，将内存中保存的taskInfo删除，流程停止" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="105" y="370" width="520" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--26" value="更新数据库：参数有更新的的任务更新数据库（intelligenceJob）种的数据，新增的任务保存到数据表中" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=default;fillColor=none;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="74" y="418" width="570" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--27" value="&lt;span style=&quot;color: rgb(51, 51, 51); orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;更新内存中的数据，有更新的和新加的，将对应的taskId添加到taskIdsOfThisCommand中&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="78.5" y="460" width="561" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--28" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;将新添加的任务加入到resource表中，将已存在的没有变动的任务&lt;span style=&quot;color: rgb(51, 51, 51); orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Helvetica&quot;&gt;也加入taskIdsOfThisCommand中&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="74" y="510" width="576" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--29" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 13px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;taskIdsOfThisCommand中保存的是需要agent启动的任务ID&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="174" y="550" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--30" value="&lt;span style=&quot;color: rgb(51, 51, 51); orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Helvetica&quot;&gt;初始化batchTask数据库的结果信息，进度为0，状态为RUNNING&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="105" y="600" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--31" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5" y="680" as="sourcePoint" />
+            <mxPoint x="725" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--32" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;以上是参数处理和数据库和内存中的任务信息保存，下面是任务启动&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ao0DlyovbIY_hwYU7Fb--31">
+          <mxGeometry x="-0.1917" y="1" relative="1" as="geometry">
+            <mxPoint x="55" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--33" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 11.3pt;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;new &lt;/span&gt;&lt;font color=&quot;#080808&quot;&gt;Thread&lt;/font&gt;&lt;span style=&quot;color: rgb(180, 150, 10);&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;new &lt;/span&gt;&lt;font color=&quot;#080808&quot;&gt;TriggerThread&lt;/font&gt;&lt;span style=&quot;color: rgb(188, 11, 162);&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: rgb(135, 16, 148);&quot;&gt;taskService&lt;/span&gt;&lt;font color=&quot;#080808&quot;&gt;, &lt;/font&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;taskId&lt;/span&gt;&lt;font color=&quot;#080808&quot;&gt;, &lt;/font&gt;...&lt;span style=&quot;color: rgb(188, 11, 162);&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: rgb(180, 150, 10);&quot;&gt;)&lt;/span&gt;&lt;font color=&quot;#080808&quot;&gt;.start&lt;/font&gt;&lt;span style=&quot;color: rgb(180, 150, 10);&quot;&gt;()&lt;/span&gt;&lt;font color=&quot;#080808&quot;&gt;;&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="93.5" y="700" width="561" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--34" value="&lt;div style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:11.3pt;&quot;&gt;&lt;pre&gt;&lt;span style=&quot;color:#871094;&quot;&gt;taskService&lt;/span&gt;.trigger&lt;span style=&quot;color:#3f9101;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#871094;&quot;&gt;taskId&lt;/span&gt;&lt;span style=&quot;color:#3f9101;&quot;&gt;)&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="200" y="740" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--35" value="&lt;div style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:11.3pt;&quot;&gt;&lt;pre&gt;主要逻辑在makeTaskStatusChangeTo&lt;span style=&quot;color:#b4960a;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#871094;&quot;&gt;currentStatus&lt;/span&gt;&lt;span style=&quot;color:#b4960a;&quot;&gt;)&lt;/span&gt;;方法中&lt;/pre&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="89" y="790" width="536" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--36" value="新添加任务的目标状态为RUNNING，当前状态为PADDING，会执行&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 11.3pt; color: rgb(0, 98, 122);&quot;&gt;paddingToRunning&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 11.3pt; color: rgb(63, 145, 1);&quot;&gt;()&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="60" y="840" width="580" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--37" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="915" as="sourcePoint" />
+            <mxPoint x="720" y="915" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--38" value="遍历内存中保存的agent节点信息，找到符合启动该任务硬件信息的所有agent，作为候选项添加到列表中" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="59" y="930" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--39" value="&lt;span style=&quot;color: rgb(51, 51, 51); orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;1: 是否有同类型算子启动过了 2：model是否一致  3：分数够不够&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="120" y="974" width="520" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--40" value="&lt;span style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; class=&quot;md-plain md-expand&quot;&gt;判断符合的卡 --&amp;gt; 1: 是否有同类型算子启动过了&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; class=&quot;md-softbreak&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; display: inline-block; white-space: pre; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; background-color: rgb(255, 255, 255);&quot; class=&quot;md-tab&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; class=&quot;md-plain&quot;&gt;2：model是否一致&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; class=&quot;md-softbreak&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; class=&quot;md-plain&quot;&gt; &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; class=&quot;md-plain&quot;&gt;3: 分数够不够&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; class=&quot;md-softbreak&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; class=&quot;md-plain&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; display: inline-block; white-space: pre; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; background-color: rgb(255, 255, 255);&quot; class=&quot;md-tab&quot;&gt;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; class=&quot;md-plain&quot;&gt;4: 指定卡号的情况下，卡号是否和指定的一致&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; class=&quot;md-softbreak&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; class=&quot;md-plain&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; display: inline-block; white-space: pre; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; background-color: rgb(255, 255, 255);&quot; class=&quot;md-tab&quot;&gt;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; class=&quot;md-plain md-expand&quot;&gt;5：指定芯片号的情况下，剩余芯片号够用不&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="67" y="1020" width="590" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--41" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;判断符合的卡总数够不够&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="252" y="1150" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--42" value="&lt;span style=&quot;color: rgb(51, 51, 51); orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;得到了所有符合的Agent   --&amp;gt; 还会根据配置，选择策略  --&amp;gt;cardScheduleStrategy 满载 或者 负载均衡（默认）&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="10" y="1200" width="786" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--43" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;如果有多个符合条件的agent，找到后根据策略排序后，选第一个&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="164" y="1240" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--44" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;在这个agent上，判断此Agent上的硬件余量是否满足参数的要求，并执行扣除硬件的操作&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="89" y="1290" width="635" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--45" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;减去需要的资源数量，绑定taskId和虚拟芯片号，如果是卡类硬件，需要将实际使用的卡号反填到TaskResourceInfo.vecAssignCard&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="138" y="1350" width="530" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--46" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;如果包不存在或者版本错误，则先安装或者更新包&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="225" y="1430" width="390" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--47" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;包正确或者安装更新成功，开始启动任务&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="239" y="1480" width="381" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--48" value="&lt;ul style=&quot;box-sizing: border-box; margin: 0px; padding-left: 30px; position: relative; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; text-align: left; background-color: rgb(255, 255, 255);&quot; data-mark=&quot;*&quot; class=&quot;ul-list&quot;&gt;&lt;li style=&quot;box-sizing: border-box; margin: 0px; position: relative;&quot; class=&quot;md-list-item md-focus-container&quot;&gt;&lt;p style=&quot;box-sizing: border-box; line-height: inherit; orphans: 4; margin: 0px 0px 0.5rem; white-space-collapse: preserve; position: relative;&quot; class=&quot;md-end-block md-p md-focus&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;md-plain md-expand&quot;&gt;清除以前指定的硬件资源(可能上一个Agent返回 启动错误了，需要尝试下一个agent)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; margin: 0px; position: relative;&quot; class=&quot;md-list-item&quot;&gt;&lt;p style=&quot;box-sizing: border-box; line-height: inherit; orphans: 4; margin: 0px 0px 0.5rem; white-space-collapse: preserve; position: relative;&quot; class=&quot;md-end-block md-p&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;md-plain&quot;&gt;重新指定内存中taskInfo对象卡号  芯片号   --&amp;gt; 同时扣除agent的硬件资源&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; margin: 0px; position: relative;&quot; class=&quot;md-list-item md-focus-container&quot;&gt;&lt;p style=&quot;box-sizing: border-box; line-height: inherit; orphans: 4; margin: 0px 0px 0.5rem; white-space-collapse: preserve; position: relative;&quot; class=&quot;md-end-block md-p md-focus&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;md-plain md-expand&quot;&gt;这个时候才指定了卡号，我们要组建发送给Agent 启动任务的参数了&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="120" y="1530" width="650" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--87" value="agent返回成功信息后，更新任务进度为100，更新数据库batch Task中的记录" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="225" y="1650" width="440" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--88" value="所有任务执行完毕，更新数据库Batch Task中任务状态为STOPPED" style="whiteSpace=wrap;html=1;" vertex="1" parent="lX0ENtyYD9PtGXseFzCh-18">
+          <mxGeometry x="240" y="1700" width="390" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.53;entryY=0.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lX0ENtyYD9PtGXseFzCh-1" target="lX0ENtyYD9PtGXseFzCh-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--2" target="ao0DlyovbIY_hwYU7Fb--5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--7" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ao0DlyovbIY_hwYU7Fb--6">
+          <mxGeometry y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--2" target="lX0ENtyYD9PtGXseFzCh-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--2" value="校验通过" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="358" y="270" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--5" value="向中台回复fail" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="291.5" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.541;exitY=1.1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="lX0ENtyYD9PtGXseFzCh-8" target="ao0DlyovbIY_hwYU7Fb--2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--10" target="lX0ENtyYD9PtGXseFzCh-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--15" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ao0DlyovbIY_hwYU7Fb--12">
+          <mxGeometry x="-0.2632" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--10" target="ao0DlyovbIY_hwYU7Fb--13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--16" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ao0DlyovbIY_hwYU7Fb--14">
+          <mxGeometry x="-0.2308" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--10" value="数据库插入&lt;div&gt;成功&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="358" y="550" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--13" value="向中台回复fail" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="571.5" width="140" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--17" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="640" as="sourcePoint" />
+            <mxPoint x="820" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--18" value="RM服务启动后，会启动&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 11.3pt;&quot;&gt;TaskQueueHandleService，在run方法中while循环不断地取出数据库中未处理得任务&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="18" y="650" width="760" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--51" target="ao0DlyovbIY_hwYU7Fb--52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--51" value="agent" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="402" y="2804" width="76" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--50" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;rpc startTask(TaskStartRequest) returns (TaskStartResponse){}&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" y="2754" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--49" value="&lt;div style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:11.3pt;&quot;&gt;&lt;pre&gt;&lt;span style=&quot;color:#871094;&quot;&gt;agentClient&lt;/span&gt;.startTask&lt;span style=&quot;color:#3f9101;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;taskStartRequest,...)&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="2694" width="370" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--52" target="ao0DlyovbIY_hwYU7Fb--56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--52" target="ao0DlyovbIY_hwYU7Fb--58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--52" value="request&lt;div&gt;参数校验&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="2874" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--54" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: start; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;request不能为null，&lt;/span&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: start; white-space: pre-wrap; background-color: rgb(255, 255, 255);&quot;&gt;TaskBaseInfo不能为null，&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: start; white-space: pre-wrap; background-color: rgb(255, 255, 255);&quot;&gt;taskId不能为null&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="2884" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--56" value="抛异常" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="2899" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--58" target="ao0DlyovbIY_hwYU7Fb--61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--63" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ao0DlyovbIY_hwYU7Fb--62">
+          <mxGeometry x="-0.1429" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--58" target="ao0DlyovbIY_hwYU7Fb--64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--58" value="检查是否&lt;div&gt;已存在该任务的线程&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="2994" width="80" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--59" value="在内存中维护了一个任务taskId和任务线程的Map，可以控制关闭" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="3009" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--61" value="返回成功信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="3016.5" width="110" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--64" target="ao0DlyovbIY_hwYU7Fb--66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--68" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ao0DlyovbIY_hwYU7Fb--67">
+          <mxGeometry x="-0.1429" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--64" target="ao0DlyovbIY_hwYU7Fb--69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--64" value="检查与RM的&lt;div&gt;连接状态&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="3114" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--66" value="抛异常" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="3139" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--69" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;三方算法需要先获取3个端口port，再获取一个端口 sshPort&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;大华算法的sshPort为0&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="223" y="3229" width="435" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--71" target="ao0DlyovbIY_hwYU7Fb--73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--71" value="创建任务线程 TaskManagerThread，并start" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="3314" width="236" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.47;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--69" target="ao0DlyovbIY_hwYU7Fb--71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--73" target="ao0DlyovbIY_hwYU7Fb--74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--76" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ao0DlyovbIY_hwYU7Fb--75">
+          <mxGeometry x="-0.3004" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ao0DlyovbIY_hwYU7Fb--73" target="ao0DlyovbIY_hwYU7Fb--77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--79" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ao0DlyovbIY_hwYU7Fb--78">
+          <mxGeometry x="-0.2933" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--73" value="参数中的algorithmInfo是否为空" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="403" y="3384" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--74" value="&lt;div style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:11.3pt;&quot;&gt;&lt;pre&gt;createProcess&lt;span style=&quot;color:#b4960a;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#871094;&quot;&gt;request&lt;/span&gt;&lt;span style=&quot;color:#b4960a;&quot;&gt;)&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="137.5" y="3484" width="205" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--77" value="&lt;div style=&quot;background-color:#ffffff;color:#080808;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:11.3pt;&quot;&gt;&lt;pre&gt;createThirdParProcess&lt;span style=&quot;color:#b4960a;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#871094;&quot;&gt;request&lt;/span&gt;&lt;span style=&quot;color:#b4960a;&quot;&gt;)&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="566" y="3484" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--82" value="&lt;p style=&quot;box-sizing: border-box; line-height: inherit; orphans: 4; margin: 0.8em 0px; white-space-collapse: preserve; position: relative; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; text-align: start;&quot; class=&quot;md-end-block md-p&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;md-plain&quot;&gt;process执行完毕或者进程出现异常，pid都会设为pid=-1；这个是为了停止任务时进行判断&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;md-plain&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="3564" width="657" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.473;entryY=0.075;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="ao0DlyovbIY_hwYU7Fb--82">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="3534" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--84" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;保存任务信息到taskSyncInfoMap，用于上报（上报逻辑是定时任务，会检测taskSyncInfoMap中是否存在任务&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="3634" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--85" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;保存任务使用的端口信息到 taskPortsMap&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="3731" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ao0DlyovbIY_hwYU7Fb--86" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;grpc onNext回复成功信息&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="3804" width="310" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
