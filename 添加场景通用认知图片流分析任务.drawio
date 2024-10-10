@@ -135,6 +135,21 @@
         <mxCell id="TzDmx2nd5fRmSMZ_yycr-76" value="过滤掉已经加载solutionKey的算子，没有初始化的、networkLabel不符合的、能力集为null的，没有计算卡的" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="492.5" y="1810" width="165" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="TzDmx2nd5fRmSMZ_yycr-77" value="给任务的solutionKey添加能力" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TzDmx2nd5fRmSMZ_yycr-78" value="以solutionKey+NetworkLabel为key，存储了总能力集和需要的能力集" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="2020" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TzDmx2nd5fRmSMZ_yycr-79" value="如果已经有以该key的能力集，且剩余的能力集满足该任务所需的能力集，就直接用" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="479" y="2100" width="171" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TzDmx2nd5fRmSMZ_yycr-80" value="如果没有，则挑选有能力集的节点" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="472" y="2190" width="187" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TzDmx2nd5fRmSMZ_yycr-81" value="如果还是没有，则要查找可以卸载的算子" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="493" y="2280" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
